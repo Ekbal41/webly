@@ -82,9 +82,13 @@
     "title_part2": "Work",
     "subtext": "A simple and transparent process to get you started.",
     "step1": "Discussion & Requirement",
+    "step1_desc": "We listen to your ideas and understand your business goals.",
     "step2": "Design & Development",
+    "step2_desc": "We create a stunning design and build your website with clean code.",
     "step3": "Review & Revision",
-    "step4": "Delivery & Support"
+    "step3_desc": "You review the work and we make any necessary changes.",
+    "step4": "Delivery & Support",
+    "step4_desc": "We hand over the final product and provide ongoing support."
   },
   "pricing": {
     "title": "Pricing",
