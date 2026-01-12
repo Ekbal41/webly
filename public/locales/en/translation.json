@@ -1,0 +1,132 @@
+{
+  "brand": {
+    "name": "TrustyWebdev"
+  },
+  "nav": {
+    "services": "Services",
+    "work": "Work",
+    "process": "Process",
+    "pricing": "Pricing",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Leading Digital Agency",
+    "headline_part1": "The Quickest Way to",
+    "headline_part2": "Grow Your Business",
+    "headline": "Modern websites that help you get hired and grow your business",
+    "subtext": "Personal portfolios, landing pages, and website maintenance — fast, reliable, and affordable.",
+    "cta_quote": "Get Started",
+    "cta_samples": "Learn More",
+    "stats": {
+      "online": "100% Online",
+      "support": "24/7 Support"
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "portfolio": {
+      "title": "Personal Portfolio Websites",
+      "desc": "Showcase your work with a professional portfolio.",
+      "price": "Starting from 5,000 BDT"
+    },
+    "landing_page": {
+      "title": "High-Converting Landing Pages",
+      "desc": "Drive sales and leads with a custom landing page.",
+      "price": "Starting from 8,000 BDT"
+    },
+    "maintenance": {
+      "title": "Website Maintenance",
+      "desc": "Keep your site secure and up-to-date.",
+      "price": "Starting from 2,000 BDT / month"
+    }
+  },
+  "features": {
+    "title_part1": "Why",
+    "title_part2": "Choose Us?",
+    "subtext": "We combine modern technology with traditional values to ensure high-quality web development.",
+    "teacher": {
+      "title": "Expert Developers",
+      "desc": "Our team consists of experienced developers who follow scientific methods with patience."
+    },
+    "age": {
+      "title": "Scalable for Everyone",
+      "desc": "From small startups to large enterprises, we follow specific methodologies for each scale."
+    },
+    "free": {
+      "title": "Transparent Pricing",
+      "desc": "We have no hidden fees. Our goal is to spread high-quality technology for all!"
+    }
+  },
+  "samples": {
+    "title": "Work Samples",
+    "title_part1": "Our",
+    "title_part2": "Work",
+    "subtext": "Check out some of our recent projects.",
+    "view_demo": "View Demo",
+    "item1": {
+      "title": "Portfolio Site",
+      "category": "Personal Portfolio"
+    },
+    "item2": {
+      "title": "Landing Page",
+      "category": "Business Landing Page"
+    },
+    "item3": {
+      "title": "Business Website",
+      "category": "Corporate Site"
+    }
+  },
+  "process": {
+    "title": "Our Process",
+    "title_part1": "How We",
+    "title_part2": "Work",
+    "subtext": "A simple and transparent process to get you started.",
+    "step1": "Discussion & Requirement",
+    "step2": "Design & Development",
+    "step3": "Review & Revision",
+    "step4": "Delivery & Support"
+  },
+  "pricing": {
+    "title": "Pricing",
+    "title_part1": "Simple",
+    "title_part2": "Pricing",
+    "subtext": "Transparent pricing with no hidden fees.",
+    "popular": "Most Popular",
+    "currency": "BDT",
+    "monthly": "BDT/mo",
+    "portfolio": {
+      "price": "5,000",
+      "f1": "Responsive Design",
+      "f2": "3-5 Pages",
+      "f3": "Contact Form",
+      "f4": "Social Links"
+    },
+    "landing": {
+      "price": "8,000",
+      "f1": "One Page Scroll",
+      "f2": "High Conversion Design",
+      "f3": "Speed Optimized",
+      "f4": "Analytics Setup"
+    },
+    "maintenance": {
+      "price": "2,000",
+      "f1": "Content Updates",
+      "f2": "Security Check",
+      "f3": "Regular Backups",
+      "f4": "Priority Support"
+    }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "title_part1": "Get In",
+    "title_part2": "Touch",
+    "subtext": "We'd love to hear from you. Reach out anytime!",
+    "whatsapp_title": "WhatsApp",
+    "whatsapp_desc": "Fastest way to reach us",
+    "whatsapp_btn": "Chat on WhatsApp",
+    "email_title": "Email",
+    "email_desc": "For detailed inquiries",
+    "email_btn": "Send Email",
+    "response_promise": "We usually respond within 1 hour."
+  }
+}

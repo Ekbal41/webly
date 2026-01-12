@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@100..900&display=swap");
+
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+}
+
+:root {
+  --background: hsl(48 100% 98%); /* Warm cream */
+  --foreground: hsl(160 84% 10%); /* Deep green-black */
+
+  --card: hsl(48 100% 98%);
+  --card-foreground: hsl(160 84% 10%);
+
+  --popover: hsl(48 100% 98%);
+  --popover-foreground: hsl(160 84% 10%);
+
+  --primary: hsl(160 84% 30%); /* Islamic Emerald Green */
+  --primary-foreground: hsl(48 100% 98%);
+
+  --secondary: hsl(45 93% 47%); /* Gold */
+  --secondary-foreground: hsl(160 84% 10%);
+
+  --muted: hsl(48 30% 90%);
+  --muted-foreground: hsl(160 20% 40%);
+
+  --accent: hsl(45 93% 47%);
+  --accent-foreground: hsl(160 84% 10%);
+
+  --destructive: hsl(0 84.2% 60.2%);
+  --destructive-foreground: hsl(48 100% 98%);
+
+  --border: hsl(160 20% 85%);
+  --input: hsl(160 20% 85%);
+  --ring: hsl(160 84% 30%);
+
+  --radius: 0.75rem;
+}
+
+.dark {
+  --background: hsl(160 84% 5%);
+  --foreground: hsl(48 100% 98%);
+
+  --card: hsl(160 84% 5%);
+  --card-foreground: hsl(48 100% 98%);
+
+  --popover: hsl(160 84% 5%);
+  --popover-foreground: hsl(48 100% 98%);
+
+  --primary: hsl(160 84% 45%);
+  --primary-foreground: hsl(160 84% 5%);
+
+  --secondary: hsl(45 93% 47%);
+  --secondary-foreground: hsl(160 84% 5%);
+
+  --muted: hsl(160 30% 15%);
+  --muted-foreground: hsl(160 20% 70%);
+
+  --accent: hsl(45 93% 47%);
+  --accent-foreground: hsl(160 84% 5%);
+
+  --destructive: hsl(0 62.8% 30.6%);
+  --destructive-foreground: hsl(48 100% 98%);
+
+  --border: hsl(160 30% 20%);
+  --input: hsl(160 30% 20%);
+  --ring: hsl(160 84% 45%);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Noto Sans Bengali", sans-serif;
+  }
+}
+
+/* Islamic Geometric Pattern Background Utility */
+.islamic-pattern {
+  background-color: transparent;
+  background-image: radial-gradient(
+    circle at 2px 2px,
+    currentColor 1px,
+    transparent 0
+  );
+  background-size: 24px 24px;
+  opacity: 0.05;
+}
+
+.islamic-border {
+  border-image: linear-gradient(
+      to right,
+      transparent,
+      var(--primary),
+      transparent
+    )
+    1;
+}
