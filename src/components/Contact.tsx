@@ -36,7 +36,7 @@ export function Contact() {
                                 {t("contact.whatsapp_btn")}
                             </a>
                         </Button>
-                        <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/10 rounded-full px-8 font-bold" asChild>
+                        <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-primary rounded-full px-8 font-bold" asChild>
                             <a href="mailto:your@email.com">
                                 {t("contact.email_btn") || "Send Email"}
                                 <ArrowRight className="w-5 h-5 ml-2" />

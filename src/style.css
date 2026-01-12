@@ -35,65 +35,70 @@
 }
 
 :root {
-  --background: hsl(45 30% 97%); /* Warm off-white */
-  --foreground: hsl(180 50% 10%); /* Deep teal-black */
+  --background: hsl(0 0% 100%);
+  --foreground: hsl(222 47% 11%);
 
-  --card: hsl(45 30% 97%);
-  --card-foreground: hsl(180 50% 10%);
+  --card: hsl(0 0% 100%);
+  --card-foreground: hsl(222 47% 11%);
 
-  --popover: hsl(45 30% 97%);
-  --popover-foreground: hsl(180 50% 10%);
+  --popover: hsl(0 0% 100%);
+  --popover-foreground: hsl(222 47% 11%);
 
-  --primary: hsl(172 66% 35%); /* Vibrant Teal */
-  --primary-foreground: hsl(45 30% 97%);
+  --primary: hsl(221 83% 53%); /* Professional Blue */
+  --primary-foreground: hsl(0 0% 100%);
 
-  --secondary: hsl(38 92% 50%); /* Warm Gold */
-  --secondary-foreground: hsl(180 50% 10%);
+  --secondary: hsl(25 95% 53%); /* Warm Orange/Amber */
+  --secondary-foreground: hsl(0 0% 100%);
 
-  --muted: hsl(45 20% 92%);
-  --muted-foreground: hsl(180 20% 40%);
+  --muted: hsl(210 40% 96%);
+  --muted-foreground: hsl(215 16% 47%);
 
-  --accent: hsl(38 92% 50%);
-  --accent-foreground: hsl(180 50% 10%);
+  --accent: hsl(25 95% 53%);
+  --accent-foreground: hsl(0 0% 100%);
 
   --destructive: hsl(0 84% 60%);
-  --destructive-foreground: hsl(45 30% 97%);
+  --destructive-foreground: hsl(0 0% 98%);
 
-  --border: hsl(180 15% 88%);
-  --input: hsl(180 15% 88%);
-  --ring: hsl(172 66% 35%);
+  --border: hsl(214 32% 91%);
+  --input: hsl(214 32% 91%);
+  --ring: hsl(221 83% 53%);
 
-  --radius: 0.75rem;
+  --radius: 0.5rem;
 }
 
 .dark {
-  --background: hsl(180 40% 6%); /* Deep teal-black */
-  --foreground: hsl(45 30% 95%);
+  --background: hsl(222 47% 6%);
+  --foreground: hsl(210 40% 98%);
 
-  --card: hsl(180 35% 8%);
-  --card-foreground: hsl(45 30% 95%);
+  --card: hsl(222 47% 9%);
+  --card-foreground: hsl(210 40% 98%);
 
-  --popover: hsl(180 35% 8%);
-  --popover-foreground: hsl(45 30% 95%);
+  --popover: hsl(222 47% 9%);
+  --popover-foreground: hsl(210 40% 98%);
 
-  --primary: hsl(172 66% 50%); /* Brighter teal for dark mode */
-  --primary-foreground: hsl(180 40% 6%);
+  --primary: hsl(217 91% 60%); /* Brighter Blue for dark */
+  --primary-foreground: hsl(222 47% 6%);
 
-  --secondary: hsl(38 92% 55%);
-  --secondary-foreground: hsl(180 40% 6%);
+  --secondary: hsl(25 95% 60%); /* Brighter Orange for dark */
+  --secondary-foreground: hsl(222 47% 6%);
 
-  --muted: hsl(180 25% 12%);
-  --muted-foreground: hsl(180 15% 65%);
+  --muted: hsl(217 33% 17%);
+  --muted-foreground: hsl(215 20% 65%);
 
-  --accent: hsl(38 92% 55%);
-  --accent-foreground: hsl(180 40% 6%);
+  --accent: hsl(25 95% 60%);
+  --accent-foreground: hsl(222 47% 6%);
 
-  --destructive: hsl(0 62% 35%);
-  --destructive-foreground: hsl(45 30% 95%);
+  --destructive: hsl(0 62% 45%);
+  --destructive-foreground: hsl(210 40% 98%);
 
-  --border: hsl(180 25% 15%);
-  --input: hsl(180 25% 15%);
-  --ring: hsl(172 66% 50%);
+  --border: hsl(217 33% 17%);
+  --input: hsl(217 33% 17%);
+  --ring: hsl(217 91% 60%);
+}
+
+/* Remove primary shadow in dark mode */
+.dark [class*="shadow-primary"] {
+  --tw-shadow-color: transparent !important;
 }
 
 @layer base {
