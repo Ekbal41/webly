@@ -1,6 +1,6 @@
 {
   "brand": {
-    "name": "TrustyWebdev"
+    "name": "Webly"
   },
   "nav": {
     "services": "Services",
@@ -118,15 +118,14 @@
   },
   "contact": {
     "title": "Get in Touch",
-    "title_part1": "Get In",
-    "title_part2": "Touch",
-    "subtext": "We'd love to hear from you. Reach out anytime!",
-    "whatsapp_title": "WhatsApp",
-    "whatsapp_desc": "Fastest way to reach us",
+    "cta_headline": "Ready to Start Your Project?",
+    "cta_subtext": "Let's build something amazing together. Get in touch today!",
     "whatsapp_btn": "Chat on WhatsApp",
-    "email_title": "Email",
-    "email_desc": "For detailed inquiries",
     "email_btn": "Send Email",
     "response_promise": "We usually respond within 1 hour."
+  },
+  "footer": {
+    "tagline": "Building modern websites that grow your business.",
+    "rights": "All rights reserved."
   }
 }

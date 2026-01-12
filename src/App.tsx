@@ -5,6 +5,7 @@ import { WorkSamples } from "@/components/WorkSamples";
 import { Process } from "@/components/Process";
 import { Pricing } from "@/components/Pricing";
 import { Contact } from "@/components/Contact";
+import { Footer } from "@/components/Footer";
 
 import { ThemeProvider } from "@/components/theme-provider";
 
@@ -21,11 +22,7 @@ function App() {
                     <Pricing />
                     <Contact />
                 </main>
-                <footer className="py-8 border-t bg-muted/30">
-                    <div className="mx-auto px-4 max-w-6xl text-center text-sm text-muted-foreground">
-                        &copy; {new Date().getFullYear()} TrustyWebdev. All rights reserved.
-                    </div>
-                </footer>
+                <Footer />
             </div>
         </ThemeProvider>
     );

@@ -24,7 +24,7 @@ export function WorkSamples() {
             id: 3,
             title: t("samples.item3.title") || "Business Website",
             category: t("samples.item3.category") || "Corporate Site",
-            image: "https://images.unsplash.com/photo-1481487484168-9b930d5b7d90?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+            image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
         },
     ];
 

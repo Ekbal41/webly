@@ -1,88 +1,53 @@
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
-import { MessageCircle, Mail, Phone } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
+import { MessageCircle, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 export function Contact() {
     const { t } = useTranslation();
 
     return (
-        <section id="contact" className="py-24 md:py-32 bg-muted/30 relative overflow-hidden">
-            <div className="absolute inset-0 islamic-pattern pointer-events-none" />
+        <section id="contact" className="py-24 md:py-32 bg-primary relative overflow-hidden">
+            {/* Background decoration */}
+            <div className="absolute inset-0 opacity-10">
+                <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl" />
+                <div className="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full translate-x-1/2 translate-y-1/2 blur-3xl" />
+            </div>
 
             <div className="mx-auto px-4 max-w-6xl relative z-10">
-                <div className="text-center mb-16 space-y-4">
-                    <h2 className="text-3xl md:text-5xl font-black tracking-tight">
-                        {t("contact.title_part1") || "Get In"} <span className="text-primary">{t("contact.title_part2") || "Touch"}</span>
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                    className="text-center space-y-8"
+                >
+                    <h2 className="text-3xl md:text-5xl font-black text-primary-foreground">
+                        {t("contact.cta_headline") || "Ready to Start Your Project?"}
                     </h2>
-                    <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
-                        {t("contact.subtext") || "We'd love to hear from you. Reach out anytime!"}
+                    <p className="mx-auto max-w-2xl text-lg text-primary-foreground/80">
+                        {t("contact.cta_subtext") || "Let's build something amazing together. Get in touch today!"}
                     </p>
-                    <div className="w-24 h-1 bg-primary mx-auto rounded-full" />
-                </div>
 
-                <div className="max-w-2xl mx-auto">
-                    <div className="grid sm:grid-cols-2 gap-6">
-                        <motion.div
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.6 }}
-                        >
-                            <Card className="border-none shadow-xl shadow-primary/5 hover:-translate-y-2 transition-all duration-300 h-full">
-                                <CardContent className="pt-8 pb-8 flex flex-col items-center gap-6 text-center">
-                                    <div className="w-16 h-16 rounded-full bg-green-500/10 flex items-center justify-center">
-                                        <MessageCircle className="w-8 h-8 text-green-600" />
-                                    </div>
-                                    <div>
-                                        <h3 className="font-bold text-xl mb-2">{t("contact.whatsapp_title") || "WhatsApp"}</h3>
-                                        <p className="text-muted-foreground text-sm mb-4">{t("contact.whatsapp_desc") || "Fastest way to reach us"}</p>
-                                    </div>
-                                    <Button size="lg" className="w-full bg-green-600 hover:bg-green-700 text-white rounded-full" asChild>
-                                        <a href="https://wa.me/YOUR_NUMBER" target="_blank" rel="noopener noreferrer">
-                                            {t("contact.whatsapp_btn")}
-                                        </a>
-                                    </Button>
-                                </CardContent>
-                            </Card>
-                        </motion.div>
-
-                        <motion.div
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.6, delay: 0.15 }}
-                        >
-                            <Card className="border-none shadow-xl shadow-primary/5 hover:-translate-y-2 transition-all duration-300 h-full">
-                                <CardContent className="pt-8 pb-8 flex flex-col items-center gap-6 text-center">
-                                    <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
-                                        <Mail className="w-8 h-8 text-primary" />
-                                    </div>
-                                    <div>
-                                        <h3 className="font-bold text-xl mb-2">{t("contact.email_title") || "Email"}</h3>
-                                        <p className="text-muted-foreground text-sm mb-4">{t("contact.email_desc") || "For detailed inquiries"}</p>
-                                    </div>
-                                    <Button size="lg" variant="outline" className="w-full rounded-full border-2" asChild>
-                                        <a href="mailto:your@email.com">
-                                            {t("contact.email_btn") || "Send Email"}
-                                        </a>
-                                    </Button>
-                                </CardContent>
-                            </Card>
-                        </motion.div>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
+                        <Button size="lg" className="bg-white text-primary hover:bg-white/90 rounded-full px-8 font-bold shadow-xl" asChild>
+                            <a href="https://wa.me/YOUR_NUMBER" target="_blank" rel="noopener noreferrer">
+                                <MessageCircle className="w-5 h-5 mr-2" />
+                                {t("contact.whatsapp_btn")}
+                            </a>
+                        </Button>
+                        <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/10 rounded-full px-8 font-bold" asChild>
+                            <a href="mailto:your@email.com">
+                                {t("contact.email_btn") || "Send Email"}
+                                <ArrowRight className="w-5 h-5 ml-2" />
+                            </a>
+                        </Button>
                     </div>
 
-                    <motion.p
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.6, delay: 0.3 }}
-                        className="text-muted-foreground text-center mt-10 text-sm"
-                    >
+                    <p className="text-primary-foreground/60 text-sm pt-4">
                         {t("contact.response_promise")}
-                    </motion.p>
-                </div>
+                    </p>
+                </motion.div>
             </div>
         </section>
     );
