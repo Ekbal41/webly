@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
+import { contactWPLink } from "@/lib/utils";
 
 export function Contact() {
   const { t } = useTranslation();
@@ -32,7 +33,9 @@ export function Contact() {
               asChild
             >
               <a
-                href="https://wa.me/YOUR_NUMBER"
+                href={contactWPLink({
+                  template: "Hello, I'm interested in your services.",
+                })}
                 target="_blank"
                 rel="noopener noreferrer"
               >

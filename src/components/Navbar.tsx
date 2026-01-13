@@ -5,6 +5,7 @@ import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
 import { LanguageToggle } from "./LanguageToggle";
 import SiteLogo from "./SiteLogo";
+import { contactWPLink } from "@/lib/utils";
 
 export function Navbar() {
   const { t } = useTranslation();
@@ -37,7 +38,18 @@ export function Navbar() {
           <LanguageToggle />
           <ModeToggle />
           <Button asChild>
-            <a href="#contact">{t("nav.contact") || "Contact"}</a>
+            <a
+              href={contactWPLink({
+                template: "Hello, I'm interested in your services.",
+              })}
+            >
+              <img
+                src="/images/whatsapp.png"
+                alt="WhatsApp"
+                className="w-5 h-5 rounded-full"
+              />
+              {t("nav.contact") || "Contact"}
+            </a>
           </Button>
         </div>
         <div className="md:hidden col-span-2 flex justify-end items-center gap-2">
@@ -64,7 +76,18 @@ export function Navbar() {
                   </a>
                 ))}
                 <Button className="w-full rounded-full" asChild>
-                  <a href="#contact">{t("nav.contact")}</a>
+                  <a
+                    href={contactWPLink({
+                      template: "Hello, I'm interested in your services.",
+                    })}
+                  >
+                    <img
+                      src="/images/whatsapp.png"
+                      alt="WhatsApp"
+                      className="w-5 h-5 rounded-full"
+                    />
+                    {t("nav.contact") || "Contact"}
+                  </a>
                 </Button>
               </div>
             </SheetContent>

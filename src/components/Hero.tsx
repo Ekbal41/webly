@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { BookOpen, ArrowRight } from "lucide-react";
+import { contactWPLink } from "@/lib/utils";
 
 export function Hero() {
   const { t } = useTranslation();
@@ -46,7 +47,11 @@ export function Hero() {
             className="flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0"
           >
             <Button size="lg" variant="default" className="px-10" asChild>
-              <a href="#contact">
+              <a
+                href={contactWPLink({
+                  template: "Hello, I'm interested in your services.",
+                })}
+              >
                 {t("hero.cta_quote")}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>

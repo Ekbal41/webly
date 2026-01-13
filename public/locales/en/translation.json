@@ -32,8 +32,8 @@
     },
     "landing_page": {
       "title": "High-Converting Landing Pages",
-      "desc": "Get more leads and sales with a custom landing page designed around your offer and audience.",
-      "price": "Starting from 8,000 BDT"
+      "desc": "Custom landing page tailored to your offer & audience—price determined after requirements discussion.",
+      "price": "Custom Pricing (After Consultation)"
     },
     "maintenance": {
       "title": "Website Maintenance",
@@ -107,11 +107,11 @@
       "f4": "Social media profile links"
     },
     "landing": {
-      "price": "8,000",
-      "f1": "Single-page, smooth scrolling layout",
-      "f2": "Conversion-focused structure and copy guidance",
-      "f3": "Speed and performance optimized",
-      "f4": "Basic analytics setup (e.g. Google Analytics)"
+      "price": "Custom",
+      "f1": "Tailored design based on your requirements",
+      "f2": "Business-goal driven conversion structure",
+      "f3": "Maximum speed & SEO optimization",
+      "f4": "Analytics setup + full feature integration"
     },
     "maintenance": {
       "price": "2,000",

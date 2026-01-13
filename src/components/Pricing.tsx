@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 import { Check } from "lucide-react";
 import { motion } from "framer-motion";
+import { contactWPLink } from "@/lib/utils";
 
 export function Pricing() {
   const { t } = useTranslation();
@@ -129,7 +130,15 @@ export function Pricing() {
                     variant={index === 1 ? "default" : "outline"}
                     asChild
                   >
-                    <a href="#contact">{t("hero.cta_quote")}</a>
+                    <a
+                      href={contactWPLink({
+                        template: `Hi! আমি ${t(
+                          `services.${plan.key}.title`
+                        )} প্যাকেজে আগ্রহী।`,
+                      })}
+                    >
+                      {t("hero.cta_quote")}
+                    </a>
                   </Button>
                 </CardFooter>
               </Card>
