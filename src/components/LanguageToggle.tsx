@@ -21,7 +21,9 @@ export function LanguageToggle() {
         <Button variant="ghost" className="rounded-full !size-9 md:!size-auto">
           <Languages className="h-5 w-5" />
           <span className="hidden md:inline">
-            {i18n.language === "en" ? "English" : "বাংলা"}
+            {i18n.language === "en"
+              ? "English"
+              : i18n.language === "bn" && "বাংলা"}
           </span>
         </Button>
       </DropdownMenuTrigger>
