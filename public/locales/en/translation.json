@@ -1,6 +1,6 @@
 {
   "brand": {
-    "name": "Webly"
+    "name": "SeqZero"
   },
   "nav": {
     "services": "Services",
@@ -10,69 +10,70 @@
     "contact": "Contact"
   },
   "hero": {
-    "badge": "Leading Digital Agency",
-    "headline_part1": "The Quickest Way to",
-    "headline_part2": "Grow Your Business",
-    "headline": "Modern websites that help you get hired and grow your business",
-    "subtext": "Personal portfolios, landing pages, and website maintenance — fast, reliable, and affordable.",
+    "badge": "Most Reliable Digital Agency",
+    "headline_part1": "The fastest way to",
+    "headline_part2": "grow your business",
+    "headline": "Modern websites that help you get clients and grow your business",
+    "subtext": "Personal portfolios, landing pages, and full website maintenance — built fast, maintained reliably, and priced fairly.",
     "cta_quote": "Get Started",
     "cta_samples": "Learn More",
     "stats": {
-      "online": "100% Online",
-      "support": "24/7 Support"
+      "online": "100% Reliable",
+      "projects_done": "100+ Projects Done",
+      "support": "24/7 Support Available"
     }
   },
   "services": {
     "title": "Our Services",
     "portfolio": {
       "title": "Personal Portfolio Websites",
-      "desc": "Showcase your work with a professional portfolio.",
+      "desc": "Present your work, skills, and profile with a clean, professional portfolio that makes you stand out.",
       "price": "Starting from 5,000 BDT"
     },
     "landing_page": {
       "title": "High-Converting Landing Pages",
-      "desc": "Drive sales and leads with a custom landing page.",
+      "desc": "Get more leads and sales with a custom landing page designed around your offer and audience.",
       "price": "Starting from 8,000 BDT"
     },
     "maintenance": {
       "title": "Website Maintenance",
-      "desc": "Keep your site secure and up-to-date.",
+      "desc": "Keep your website secure, fast, and up-to-date with ongoing technical care and support.",
       "price": "Starting from 2,000 BDT / month"
     }
   },
   "features": {
     "title_part1": "Why",
     "title_part2": "Choose Us?",
-    "subtext": "We combine modern technology with traditional values to ensure high-quality web development.",
+    "subtext": "We use modern tools and technologies, backed by honest communication, clear processes, and reliable delivery.",
     "teacher": {
-      "title": "Expert Developers",
-      "desc": "Our team consists of experienced developers who follow scientific methods with patience."
+      "title": "Expert Developer Team",
+      "desc": "Our developers have real-world experience and follow a step-by-step, well-documented process for every project."
     },
     "age": {
-      "title": "Scalable for Everyone",
-      "desc": "From small startups to large enterprises, we follow specific methodologies for each scale."
+      "title": "Built to Scale",
+      "desc": "Whether you’re a solo creator, startup, or growing company, we tailor the solution to match your stage and goals."
     },
     "free": {
-      "title": "Transparent Pricing",
-      "desc": "We have no hidden fees. Our goal is to spread high-quality technology for all!"
+      "title": "Clear, Honest Pricing",
+      "desc": "No hidden costs, no surprise bills. What we quote is what you pay — access to quality web tech at a fair price."
     }
   },
   "samples": {
     "title": "Work Samples",
-    "title_part1": "Our",
-    "title_part2": "Work",
-    "subtext": "Check out some of our recent projects.",
+    "title_part1": "Some of",
+    "title_part2": "Our Work",
+    "subtext": "Take a look at a few recent projects we’ve worked on.",
     "view_demo": "View Demo",
     "item1": {
-      "title": "Portfolio Site",
+      "title": "Personal Portfolio Site",
       "category": "Personal Portfolio"
     },
     "item2": {
-      "title": "Landing Page",
+      "title": "Business Landing Page",
       "category": "Business Landing Page"
     },
     "item3": {
-      "title": "Business Website",
+      "title": "Corporate Website",
       "category": "Corporate Site"
     }
   },
@@ -80,56 +81,56 @@
     "title": "Our Process",
     "title_part1": "How We",
     "title_part2": "Work",
-    "subtext": "A simple and transparent process to get you started.",
-    "step1": "Discussion & Requirement",
-    "step1_desc": "We listen to your ideas and understand your business goals.",
+    "subtext": "A simple, transparent workflow so you always know what’s happening next.",
+    "step1": "Discovery & Requirements",
+    "step1_desc": "We start by understanding your ideas, business goals, and what success looks like for you.",
     "step2": "Design & Development",
-    "step2_desc": "We create a stunning design and build your website with clean code.",
-    "step3": "Review & Revision",
-    "step3_desc": "You review the work and we make any necessary changes.",
-    "step4": "Delivery & Support",
-    "step4_desc": "We hand over the final product and provide ongoing support."
+    "step2_desc": "We create a design that matches your brand and build your website with clean, modern, performance-focused code.",
+    "step3": "Review & Refinements",
+    "step3_desc": "You review the site, share feedback, and we polish the details until everything feels right.",
+    "step4": "Launch & Ongoing Support",
+    "step4_desc": "We launch your website and stay available for support, tweaks, and future improvements."
   },
   "pricing": {
     "title": "Pricing",
     "title_part1": "Simple",
-    "title_part2": "Pricing",
-    "subtext": "Transparent pricing with no hidden fees.",
-    "popular": "Most Popular",
+    "title_part2": "and Transparent",
+    "subtext": "Straightforward pricing with no hidden fees or surprise extras.",
+    "popular": "Most Popular Plan",
     "currency": "BDT",
     "monthly": "BDT/mo",
     "portfolio": {
       "price": "5,000",
-      "f1": "Responsive Design",
-      "f2": "3-5 Pages",
-      "f3": "Contact Form",
-      "f4": "Social Links"
+      "f1": "Fully responsive design",
+      "f2": "3–5 custom pages",
+      "f3": "Contact form connected to your email",
+      "f4": "Social media profile links"
     },
     "landing": {
       "price": "8,000",
-      "f1": "One Page Scroll",
-      "f2": "High Conversion Design",
-      "f3": "Speed Optimized",
-      "f4": "Analytics Setup"
+      "f1": "Single-page, smooth scrolling layout",
+      "f2": "Conversion-focused structure and copy guidance",
+      "f3": "Speed and performance optimized",
+      "f4": "Basic analytics setup (e.g. Google Analytics)"
     },
     "maintenance": {
       "price": "2,000",
-      "f1": "Content Updates",
-      "f2": "Security Check",
-      "f3": "Regular Backups",
-      "f4": "Priority Support"
+      "f1": "Regular content and text updates",
+      "f2": "Ongoing security checks and monitoring",
+      "f3": "Scheduled backups of your website",
+      "f4": "Priority technical support"
     }
   },
   "contact": {
     "title": "Get in Touch",
-    "cta_headline": "Ready to Start Your Project?",
-    "cta_subtext": "Let's build something amazing together. Get in touch today!",
+    "cta_headline": "Ready to start your next project?",
+    "cta_subtext": "Tell us what you’re planning, and we’ll help you turn it into a live, working website.",
     "whatsapp_btn": "Chat on WhatsApp",
-    "email_btn": "Send Email",
-    "response_promise": "We usually respond within 1 hour."
+    "email_btn": "Send an Email",
+    "response_promise": "We usually reply within 1 hour."
   },
   "footer": {
-    "tagline": "Building modern websites that grow your business.",
+    "tagline": "SeqZero — building modern websites that actually help your business grow.",
     "rights": "All rights reserved."
   }
 }

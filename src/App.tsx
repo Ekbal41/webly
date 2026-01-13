@@ -6,26 +6,25 @@ import { Process } from "@/components/Process";
 import { Pricing } from "@/components/Pricing";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
-
 import { ThemeProvider } from "@/components/theme-provider";
 
 function App() {
-    return (
-        <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-            <div className="min-h-screen bg-background text-foreground font-sans antialiased">
-                <Navbar />
-                <main>
-                    <Hero />
-                    <Services />
-                    <WorkSamples />
-                    <Process />
-                    <Pricing />
-                    <Contact />
-                </main>
-                <Footer />
-            </div>
-        </ThemeProvider>
-    );
+  return (
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <div className="min-h-screen bg-background text-foreground font-sans antialiased">
+        <Navbar />
+        <main>
+          <Hero />
+          <Services />
+          <WorkSamples />
+          <Process />
+          <Pricing />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+    </ThemeProvider>
+  );
 }
 
 export default App;
