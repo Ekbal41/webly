@@ -4,6 +4,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
 import { LanguageToggle } from "./LanguageToggle";
+import SiteLogo from "./SiteLogo";
 
 export function Navbar() {
   const { t } = useTranslation();
@@ -16,13 +17,12 @@ export function Navbar() {
   ];
 
   return (
-    <nav className="border-b border-primary bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
-      <div className="mx-auto px-4 max-w-6xl flex h-16 items-center justify-between">
-        <a href="#" className="font-black text-2xl tracking-tight text-primary">
-          {t("brand.name")}
-        </a>
-
-        <div className="hidden md:flex items-center gap-8">
+    <nav className="border-b border-primary bg-background/95 backdrop-blur sticky top-0 z-50">
+      <div className="mx-auto max-w-6xl px-4 h-16 grid grid-cols-3 items-center">
+        <div className="flex items-center">
+          <SiteLogo />
+        </div>
+        <div className="hidden md:flex justify-center gap-8">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -32,15 +32,15 @@ export function Navbar() {
               {link.label}
             </a>
           ))}
-          <div className="flex items-center gap-2">
-            <LanguageToggle />
-            <ModeToggle />
-          </div>
+        </div>
+        <div className="hidden md:flex items-center justify-end gap-2">
+          <LanguageToggle />
+          <ModeToggle />
           <Button asChild>
             <a href="#contact">{t("nav.contact") || "Contact"}</a>
           </Button>
         </div>
-        <div className="md:hidden flex items-center gap-2">
+        <div className="md:hidden col-span-2 flex justify-end items-center gap-2">
           <LanguageToggle />
           <ModeToggle />
           <Sheet>
@@ -58,7 +58,7 @@ export function Navbar() {
                   <a
                     key={link.href}
                     href={link.href}
-                    className="text-lg dark:text-accent-foreground font-semibold hover:text-primary transition-colors"
+                    className="text-lg font-semibold hover:text-primary transition-colors"
                   >
                     {link.label}
                   </a>

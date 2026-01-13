@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import SiteLogo from "./SiteLogo";
 
 export function Footer() {
   const { t } = useTranslation();
@@ -12,18 +13,18 @@ export function Footer() {
 
   return (
     <footer className="bg-foreground dark:bg-accent-foreground text-background py-12">
-      <div className="mx-auto px-4 max-w-6xl">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+      <div className="mx-auto max-w-6xl px-4">
+        <div className="grid gap-10 md:grid-cols-3 items-center">
           <div className="text-center md:text-left">
-            <a href="#" className="font-black text-2xl text-primary">
-              {t("brand.name") || "Webly"}
-            </a>
-            <p className="text-background/60 text-sm mt-2 max-w-xs">
+            <div className="flex justify-center md:justify-start mb-6">
+              <SiteLogo className="dark:!text-black text-white" />
+            </div>
+            <p className="text-sm text-background/60 max-w-xs mx-auto md:mx-0">
               {t("footer.tagline") ||
                 "Building modern websites that grow your business."}
             </p>
           </div>
-          <div className="flex flex-wrap justify-center gap-6">
+          <nav className="flex justify-center gap-6 flex-wrap">
             {footerLinks.map((link) => (
               <a
                 key={link.href}
@@ -33,12 +34,14 @@ export function Footer() {
                 {link.label}
               </a>
             ))}
-          </div>
-          <div className="text-center md:text-right text-sm text-background/60">
-            <p>
+          </nav>
+          <div className="text-center md:text-right text-base text-background/70">
+            <p className="font-semibold">
               &copy; {new Date().getFullYear()} {t("brand.name") || "Webly"}
             </p>
-            <p>{t("footer.rights") || "All rights reserved."}</p>
+            <p className="text-sm mt-1">
+              {t("footer.rights") || "All rights reserved."}
+            </p>
           </div>
         </div>
       </div>

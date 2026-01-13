@@ -88,7 +88,7 @@ export function Pricing() {
                 }`}
               >
                 {index === 1 && (
-                  <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary text-primary-foreground text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider">
+                  <div className="absolute text-nowrap top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary text-primary-foreground text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider">
                     {t("pricing.popular") || "Most Popular"}
                   </div>
                 )}
