@@ -1,10 +1,16 @@
 import { useTranslation } from "react-i18next";
 
-export default function SiteLogo({ className }: { className?: string }) {
+export default function SiteLogo({
+  className,
+  to = "/",
+}: {
+  className?: string;
+  to?: string;
+}) {
   const { t } = useTranslation();
   return (
     <>
-      <a href="/" className="flex gap-1 items-center">
+      <a href={to} className="flex gap-1 items-center">
         <img
           src="/logo.png"
           title={t("brand.name")}

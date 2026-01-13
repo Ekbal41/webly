@@ -45,7 +45,7 @@ export function Process() {
             >
               <Card className="h-full border-none shadow-xl transition-all hover:shadow-2xl hover:-translate-y-2 group overflow-hidden">
                 <CardContent className="relative z-10">
-                  <div className="w-16 h-16 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-black text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-16 h-16 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-black text-4xl mb-6 group-hover:scale-110 transition-transform duration-300">
                     {step.icon}
                   </div>
                   <h3 className="font-bold text-xl mb-2">

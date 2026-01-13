@@ -36,8 +36,8 @@ export function Footer() {
             ))}
           </nav>
           <div className="text-center md:text-right text-base text-background/70">
-            <p className="font-semibold">
-              &copy; {new Date().getFullYear()} {t("brand.name") || "Webly"}
+            <p className="font-medium">
+              &copy; {new Date().getFullYear()} {t("brand.name")}
             </p>
             <p className="text-sm mt-1">
               {t("footer.rights") || "All rights reserved."}

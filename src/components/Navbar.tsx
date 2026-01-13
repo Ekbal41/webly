@@ -57,20 +57,18 @@ export function Navbar() {
           <ModeToggle />
           <Sheet>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon">
-                <Menu className="h-5 w-5" />
+              <Button variant="ghost" size="icon" className="text-foreground">
+                <Menu className="h-5 w-5 text-foreground" />
               </Button>
             </SheetTrigger>
             <SheetContent>
               <div className="flex flex-col gap-6 mt-4 px-4">
-                <a href="#" className="font-black text-2xl text-primary mb-2">
-                  {t("brand.name")}
-                </a>
+                <SiteLogo to="#" />
                 {navLinks.map((link) => (
                   <a
                     key={link.href}
                     href={link.href}
-                    className="text-lg font-semibold hover:text-primary transition-colors"
+                    className="text-lg font-semibold text-foreground hover:text-primary transition-colors"
                   >
                     {link.label}
                   </a>

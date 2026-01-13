@@ -44,7 +44,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0"
+            className="flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0 w-full md:w-fit"
           >
             <Button size="lg" variant="default" className="px-10" asChild>
               <a

@@ -65,16 +65,16 @@
     "subtext": "Take a look at a few recent projects we’ve worked on.",
     "view_demo": "View Demo",
     "item1": {
-      "title": "Personal Portfolio Site",
-      "category": "Personal Portfolio"
+      "title": "Dokanify",
+      "category": "SaaS Website"
     },
     "item2": {
-      "title": "Business Landing Page",
-      "category": "Business Landing Page"
+      "title": "Tuition Terminal",
+      "category": "Educational Website"
     },
     "item3": {
-      "title": "Corporate Website",
-      "category": "Corporate Site"
+      "title": "Porao",
+      "category": "Educational Website"
     }
   },
   "process": {
@@ -130,7 +130,7 @@
     "response_promise": "We usually reply within 1 hour."
   },
   "footer": {
-    "tagline": "Building modern websites that actually help your business grow.",
+    "tagline": "Our websites aren’t just online—they’re built to truly help your business grow.",
     "rights": "All rights reserved."
   }
 }

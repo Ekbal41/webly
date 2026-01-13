@@ -15,24 +15,24 @@ export function WorkSamples() {
   const samples = [
     {
       id: 1,
-      title: t("samples.item1.title") || "Portfolio Site",
-      category: t("samples.item1.category") || "Personal Portfolio",
-      image:
-        "https://images.unsplash.com/photo-1545665277-5937489579f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      title: t("samples.item1.title"),
+      category: t("samples.item1.category"),
+      image: "/images/dokanify1.png",
+      link: "https://dokanify.xyz",
     },
     {
       id: 2,
-      title: t("samples.item2.title") || "Landing Page",
-      category: t("samples.item2.category") || "Business Landing Page",
-      image:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      title: t("samples.item2.title"),
+      category: t("samples.item2.category"),
+      image: "/images/tterminal1.png",
+      link: "https://tuitionterminal.com.bd",
     },
     {
       id: 3,
-      title: t("samples.item3.title") || "Business Website",
-      category: t("samples.item3.category") || "Corporate Site",
-      image:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      title: t("samples.item3.title"),
+      category: t("samples.item3.category"),
+      image: "/images/porao1.png",
+      link: "https://porao.com.bd",
     },
   ];
 
@@ -71,17 +71,19 @@ export function WorkSamples() {
                   <img
                     src={sample.image}
                     alt={sample.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="w-full h-full object-cover transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4">
-                    <Button
-                      variant="secondary"
-                      size="sm"
-                      className="gap-2 rounded-full"
-                    >
-                      <ExternalLink className="w-4 h-4" />
-                      {t("samples.view_demo")}
-                    </Button>
+                    <a href={sample.link} target="_blank">
+                      <Button
+                        variant="secondary"
+                        size="sm"
+                        className="gap-2 rounded-full"
+                      >
+                        <ExternalLink className="w-4 h-4" />
+                        {t("samples.view_demo")}
+                      </Button>
+                    </a>
                   </div>
                 </div>
                 <CardHeader>
