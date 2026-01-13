@@ -7,7 +7,7 @@ export function cn(...inputs: ClassValue[]) {
 
 export const contactWPLink = ({
   template,
-  phone = "01796900817",
+  phone = "+8801796900817",
 }: {
   template: string;
   phone?: string;

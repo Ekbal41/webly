@@ -132,9 +132,9 @@ export function Pricing() {
                   >
                     <a
                       href={contactWPLink({
-                        template: `Hi! আমি ${t(
+                        template: `Hi! আমি "${t(
                           `services.${plan.key}.title`
-                        )} প্যাকেজে আগ্রহী।`,
+                        )}" প্যাকেজে আগ্রহী। `,
                       })}
                     >
                       {t("hero.cta_quote")}
