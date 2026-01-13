@@ -23,7 +23,9 @@ export function LanguageToggle() {
           <span className="hidden md:inline">
             {i18n.language === "en"
               ? "English"
-              : i18n.language === "bn" && "বাংলা"}
+              : i18n.language === "bn"
+              ? "বাংলা"
+              : "English"}
           </span>
         </Button>
       </DropdownMenuTrigger>
