@@ -19,4 +19,13 @@ i18n
     },
   });
 
+i18n.on("languageChanged", (lng: string) => {
+  document.documentElement.lang = lng;
+
+  document.documentElement.style.setProperty(
+    "--font-sans",
+    lng === "bn" ? `"Noto Sans Bengali", sans-serif` : `"Noto Sans", sans-serif`
+  );
+});
+
 export default i18n;

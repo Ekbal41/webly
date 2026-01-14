@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import { BookOpen, ArrowRight } from "lucide-react";
+import { ArrowRight, TreePalm } from "lucide-react";
 import { contactWPLink } from "@/lib/utils";
 
 export function Hero() {
@@ -15,9 +15,9 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="mb-6 inline-flex items-center rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary border border-primary/20"
+            className="mb-6 inline-flex items-center rounded-full bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary border border-primary/20"
           >
-            <BookOpen className="mr-2 h-4 w-4" />
+            <TreePalm className="mr-2 h-4 w-4 text-lime-800 dark:text-lime-600" />
             <span>{t("hero.badge")}</span>
           </motion.div>
 
@@ -46,7 +46,12 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0 w-full md:w-fit"
           >
-            <Button size="lg" variant="default" className="px-10" asChild>
+            <Button
+              size="lg"
+              variant="default"
+              className="px-10 rounded-full"
+              asChild
+            >
               <a
                 href={contactWPLink({
                   template: "Hello, I'm interested in your services.",
@@ -56,7 +61,11 @@ export function Hero() {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
             </Button>
-            <Button size="lg" variant="outline" className="px-10 border-2">
+            <Button
+              size="lg"
+              variant="outline"
+              className="px-10 border-2 rounded-full"
+            >
               <a href="#work">{t("hero.cta_samples")}</a>
             </Button>
           </motion.div>

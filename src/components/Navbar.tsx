@@ -6,19 +6,28 @@ import { ModeToggle } from "./mode-toggle";
 import { LanguageToggle } from "./LanguageToggle";
 import SiteLogo from "./SiteLogo";
 import { contactWPLink } from "@/lib/utils";
+import { useScroll, useTransform, motion } from "framer-motion";
 
 export function Navbar() {
   const { t } = useTranslation();
-
+  const { scrollY } = useScroll();
+  const boxShadow = useTransform(
+    scrollY,
+    [0, 50],
+    ["0 0px 0px rgba(0,0,0,0)", "0 4px 12px rgba(0,0,0,0.10)"]
+  );
   const navLinks = [
-    { href: "#services", label: t("nav.services") || "Services" },
+    { href: "#pricing", label: t("nav.services") || "Services" },
     { href: "#work", label: t("nav.work") || "Work" },
     { href: "#process", label: t("nav.process") || "Process" },
     { href: "#pricing", label: t("nav.pricing") || "Pricing" },
   ];
 
   return (
-    <nav className="border-b border-primary bg-background/95 backdrop-blur sticky top-0 z-50">
+    <motion.nav
+      style={{ boxShadow }}
+      className="border-b border-primary bg-background/95 backdrop-blur sticky top-0 z-50"
+    >
       <div className="mx-auto max-w-6xl px-4 h-16 grid grid-cols-3 items-center">
         <div className="flex items-center">
           <SiteLogo />
@@ -37,7 +46,7 @@ export function Navbar() {
         <div className="hidden md:flex items-center justify-end gap-2">
           <LanguageToggle />
           <ModeToggle />
-          <Button asChild>
+          <Button asChild className="rounded-full">
             <a
               href={contactWPLink({
                 template: "Hello, I'm interested in your services.",
@@ -92,6 +101,6 @@ export function Navbar() {
           </Sheet>
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 }

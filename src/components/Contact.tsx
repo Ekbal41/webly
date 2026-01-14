@@ -18,7 +18,7 @@ export function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center space-y-8"
+          className="text-center space-y-6"
         >
           <h2 className="text-3xl md:text-5xl font-black text-primary-foreground">
             {t("contact.cta_headline")}
@@ -49,18 +49,21 @@ export function Contact() {
             </Button>
             <Button
               size="lg"
-              variant="outline"
-              className="border-2 rounded-full px-8 font-bold"
+              className="bg-white text-primary hover:bg-white/90 rounded-full px-4 font-bold shadow-xl"
               asChild
             >
               <a href="mailto:asifekbaldev@gmail.com">
+                <img
+                  src="/images/gmail.png"
+                  alt="WhatsApp"
+                  className="w-5 h-4 rounded-md"
+                />
                 {t("contact.email_btn")}
                 <ArrowRight className="w-5 h-5 ml-2" />
               </a>
             </Button>
           </div>
-
-          <p className="text-primary-foreground/60 text-sm pt-4">
+          <p className="text-primary-foreground/60 text-sm">
             {t("contact.response_promise")}
           </p>
         </motion.div>
