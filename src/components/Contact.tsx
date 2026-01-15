@@ -54,9 +54,9 @@ export function Contact() {
             >
               <a href="mailto:asifekbaldev@gmail.com">
                 <img
-                  src="/images/gmail.png"
-                  alt="WhatsApp"
-                  className="w-5 h-4 rounded-md"
+                  src="/images/mail.png"
+                  alt="Email"
+                  className="w-5 h-5 rounded-full border border-gray-300"
                 />
                 {t("contact.email_btn")}
                 <ArrowRight className="w-5 h-5 ml-2" />
