@@ -10,17 +10,20 @@
     "contact": "Contact Us"
   },
   "hero": {
-    "badge": "Most Reliable Digital Agency",
-    "headline_part1": "The fastest way to",
-    "headline_part2": "grow your business",
+    "badge": "Trusted & Professional Digital Agency",
+    "headline_part1": "Modern and Custom",
+    "headline_part2": "Websites for Your Business",
     "headline": "Modern websites that help you get clients and grow your business",
     "subtext": "Personal portfolios, landing pages, and full website maintenance — built fast, maintained reliably, and priced fairly.",
     "cta_quote": "Get Started",
     "cta_samples": "Learn More",
     "stats": {
-      "online": "100% Reliable",
-      "projects_done": "100+ Projects Done",
-      "support": "24/7 Support Available"
+      "reliability_in_percent": "100%",
+      "reliability_tagline": "100% Reliable Service",
+      "projects_done": "100+",
+      "projects_done_tagline": "100+ Successfully Delivered Projects",
+      "support_hours": "24/7",
+      "support_hours_tagline": "24/7 Support Available"
     }
   },
   "services": {
@@ -82,12 +85,16 @@
     "title_part1": "How We",
     "title_part2": "Work",
     "subtext": "A simple, transparent workflow so you always know what’s happening next.",
+    "step1_num": "1",
     "step1": "Discovery & Requirements",
     "step1_desc": "We start by understanding your ideas, business goals, and what success looks like for you.",
+    "step2_num": "2",
     "step2": "Design & Development",
     "step2_desc": "We create a design that matches your brand and build your website with clean, modern, performance-focused code.",
+    "step3_num": "3",
     "step3": "Review & Refinements",
     "step3_desc": "You review the site, share feedback, and we polish the details until everything feels right.",
+    "step4_num": "4",
     "step4": "Launch & Ongoing Support",
     "step4_desc": "We launch your website and stay available for support, tweaks, and future improvements."
   },
@@ -100,7 +107,7 @@
     "currency": "BDT",
     "monthly": "BDT/mo",
     "portfolio": {
-      "price": "5,000",
+      "price": "1,000+",
       "f1": "Fully responsive design",
       "f2": "3–5 custom pages",
       "f3": "Contact form connected to your email",
@@ -132,5 +139,10 @@
   "footer": {
     "tagline": "Our websites aren’t just online—they’re built to truly help your business grow.",
     "rights": "All rights reserved."
+  },
+  "wp_chat": {
+    "status": "Online",
+    "chat_placeholder": "How can we help you?",
+    "input_placeholder": "Type your message here..."
   }
 }

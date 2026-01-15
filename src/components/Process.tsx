@@ -6,10 +6,10 @@ export function Process() {
   const { t } = useTranslation();
 
   const steps = [
-    { key: "step1", icon: "১" },
-    { key: "step2", icon: "২" },
-    { key: "step3", icon: "৩" },
-    { key: "step4", icon: "৪" },
+    { key: "step1", icon: t("process.step1_num") },
+    { key: "step2", icon: t("process.step2_num") },
+    { key: "step3", icon: t("process.step3_num") },
+    { key: "step4", icon: t("process.step4_num") },
   ];
 
   return (

@@ -176,3 +176,10 @@
   --shadow-xl: var(--shadow-xl);
   --shadow-2xl: var(--shadow-2xl);
 }
+
+.styles-module_buttonSend__kXjja {
+  padding-left: 10px;
+}
+.styles-module_statusTitle__NgfPQ {
+  font-size: 18px !important;
+}

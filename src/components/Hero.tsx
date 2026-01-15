@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import { ArrowRight, TreePalm } from "lucide-react";
+import { ArrowRight, Trophy } from "lucide-react";
 import { contactWPLink } from "@/lib/utils";
 
 export function Hero() {
@@ -17,7 +17,7 @@ export function Hero() {
             transition={{ duration: 0.5 }}
             className="mb-6 inline-flex items-center rounded-full bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary border border-primary/20"
           >
-            <TreePalm className="mr-2 h-4 w-4 text-lime-800 dark:text-lime-600" />
+            <Trophy className="mr-2 h-4 w-4" />
             <span>{t("hero.badge")}</span>
           </motion.div>
 
@@ -73,30 +73,32 @@ export function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="mt-16 grid grid-cols-3 gap-4 md:gap-12"
+            className="mt-16 grid grid-cols-3 gap-4 md:gap-12 lg:max-w-3/5"
           >
             <div className="flex flex-col items-center">
               <span className="text-xl md:text-4xl font-black text-primary">
-                ১০০%
+                {t("hero.stats.reliability_in_percent")}
               </span>
-              <span className="text-sm font-bold text-muted-foreground uppercase tracking-wider">
-                {t("hero.stats.online")}
+              <span className="text-sm font-bold text-wrap text-muted-foreground uppercase tracking-wider">
+                {t("hero.stats.reliability_tagline")}
               </span>
             </div>
+
             <div className="flex flex-col items-center">
               <span className="text-xl md:text-4xl font-black text-primary">
-                ১০০+
-              </span>
-              <span className="text-sm font-bold text-muted-foreground uppercase tracking-wider">
                 {t("hero.stats.projects_done")}
               </span>
+              <span className="text-sm font-bold text-wrap text-muted-foreground uppercase tracking-wider">
+                {t("hero.stats.projects_done_tagline")}
+              </span>
             </div>
+
             <div className="flex flex-col items-center">
               <span className="text-xl md:text-4xl font-black text-primary">
-                ২৪/৭
+                {t("hero.stats.support_hours")}
               </span>
-              <span className="text-sm font-bold text-muted-foreground uppercase tracking-wider">
-                {t("hero.stats.support")}
+              <span className="text-sm font-bold text-wrap text-muted-foreground uppercase tracking-wider">
+                {t("hero.stats.support_hours_tagline")}
               </span>
             </div>
           </motion.div>
